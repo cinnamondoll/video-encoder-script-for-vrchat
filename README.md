@@ -3,11 +3,11 @@ Video encoder script for VRChat
 
 Description
 -----------
-VRChat videoplayers in most world may load arbitary URLs, but they only support a narrow set of codecs and containers. This script was made to encode any `.mkv`-file thrown at it into a suitable format.
+VRChat videoplayers in most worlds may load arbitary URLs, but they only support a narrow set of codecs and containers. This script was made to encode any `.mkv`-file thrown at it into a suitable format.
 
 This way me and my friends are able to have movie nights in VRChat in **any** world with a videoplayer.
 
-When this script is executed it gives points to different the differnt video, audio, and subtitle tracks from the input and then based on those points it later decides which of these track(s) should be in the final output.
+When this script is executed it scores different video, audio, and subtitle tracks from the input file and then based on the score it decides which of these track(s) should be in the final output file.
 
 Example
 -------
@@ -19,10 +19,10 @@ Let's say the input `filename.mkv` has:
 
 In this example the script will:
 
-- pick the japanese audio (personal preference)
-- pick the english subtitles (personal preference)
-- downmix the audio track to 2.0 (limitation: videoplayer only plays stereo channels)
-- encode/burn the subtitle into the video (limitation: videoplayer doesn't display subtitles)
+- pick the japanese audio
+- pick the english subtitles
+- downmix the audio track to 2.0
+- encode/burn the subtitle into the video
 
 The final video will then be encoded to `filename.mp4`.
 
