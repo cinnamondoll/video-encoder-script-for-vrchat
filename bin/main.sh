@@ -3,7 +3,6 @@ set -eo pipefail
 PATH="$(dirname "$(readlink -f "$0")"):$PATH"
 BASE="${BASH_SOURCE[0]%/*}"
 
-. "$BASE/../lib/encode.sh"
 . "$BASE/../lib/detector.sh"
 
 help()
@@ -492,4 +491,5 @@ main()
 
   parse_file "$file"
 }
+
 main "$@"
